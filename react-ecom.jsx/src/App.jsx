@@ -6,7 +6,7 @@ import Products from "./comps/Products/Products";
 import Users from "./comps/users/Users";
 import { Route, Routes } from 'react-router-dom';
 import RecipeSingleDetails from "./comps/Recipes/RecipeSingleDetails";
-import NotFound from "./comps/Recipes/NotFound";
+// import NotFound from "./comps/Recipes/NotFound";
 
 const App = () => {
   return (
@@ -17,9 +17,9 @@ const App = () => {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/recipes/:id" element={<RecipeSingleDetails />} /> {/* 👈 FIXED */}
         <Route path="/users" element={<Users />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
-      
+      <h1 style={{textAlign:"center",font:"20px" ,backgroundColor:"yellow",margin:"100px"}}>Hello welcome to OFFERS MART</h1>
     </div>
   );
 };
