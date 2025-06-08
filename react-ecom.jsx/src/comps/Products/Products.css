@@ -66,3 +66,43 @@
   color: #000;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .products-list {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .products-image {
+    height: 120px;
+    border-radius: 6px;
+  }
+
+  .product-name {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .product-tags,
+  .product-brand,
+  .products-rating,
+  .products-price,
+  .producst-dime {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .product-name span,
+  .product-tags span,
+  .product-brand span,
+  .products-rating span,
+  .products-price span,
+  .producst-dime span {
+    font-size: 13px;
+  }
+}

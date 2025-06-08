@@ -57,3 +57,33 @@
 .nav_span:hover::after {
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+    align-items: flex-start;
+  }
+
+  .store_name {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav_span {
+    font-size: 16px;
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .nav_span:hover::after {
+    width: 100%;
+  }
+}
