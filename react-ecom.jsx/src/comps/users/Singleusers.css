@@ -1,0 +1,68 @@
+/* Wrapper for all user cards */
+.user-list {
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* 👈 this adds space between items */
+  padding: 20px;
+}
+
+/* User card styles */
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s ease;
+  width: 15%;
+  min-width: 200px;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile image */
+.user-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.user-img {
+  display: block;
+  margin: 0 auto 10px auto; /* horizontal auto centers the block */
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* User name */
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Icon + text row */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.user-info svg {
+  margin-right: 10px;
+  color: #007acc;
+}

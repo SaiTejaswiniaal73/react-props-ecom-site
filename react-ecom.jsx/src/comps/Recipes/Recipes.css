@@ -1,0 +1,23 @@
+
+
+.recipesAll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* 👈 this adds space between items */
+  padding: 20px; /* optional: adds space around the whole grid */
+}
+
+.recipesAll > .recipeSingle {
+  background-color: skyblue;
+  padding: 10px; /* optional: space inside each recipe card */
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
+}
+
+.recipeSingle > img {
+  width: 100%;
+}
+
+.recipeSingle > h1 {
+  font-size: 1.6rem;
+}
