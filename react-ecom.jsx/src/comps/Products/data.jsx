@@ -12,6 +12,7 @@ export const products={
       "tags": [
         "beauty",
         "mascara"
+        
       ],
       "brand": "Essence",
       "sku": "BEA-ESS-ESS-001",
